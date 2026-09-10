@@ -109,6 +109,14 @@ docker compose up --build
 
 The API service connects to PostgreSQL through the Compose service name `postgres`. The PostgreSQL data directory is persisted in the named `postgres_data` volume.
 
+To demo Swagger while running through Docker, apply the development override:
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.swagger.yml up --build
+```
+
+Swagger will then be available at `http://localhost:3000/api/docs`.
+
 ## Database Migrations
 
 ```bash
