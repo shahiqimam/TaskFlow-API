@@ -129,6 +129,8 @@ Seed accounts use fake data only:
 
 - `admin@example.com / Example123!`
 - `alex@example.com / Example123!`
+- `jordan@example.com / Example123!`
+- `taylor@example.com / Example123!`
 
 ## Testing
 
@@ -158,7 +160,7 @@ Register:
 ```bash
 curl -X POST http://localhost:3000/api/v1/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"name":"Alex Morgan","email":"alex@example.com","password":"StrongPassword123!"}'
+  -d '{"name":"Jamie Reed","email":"jamie@example.com","password":"StrongPassword123!"}'
 ```
 
 Login:
